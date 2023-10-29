@@ -55,6 +55,10 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'servicios'=>'site/servicios',
+                'nosotros'=>'site/nosotros',
+                'contacto'=>'site/contacto',
+                 
             ],
         ],
         

@@ -43,8 +43,8 @@ AppAsset::register($this);
 
         <!--Favicon-->
         <?php /*
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon"> */ ?>
+          <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+          <link rel="icon" href="images/favicon.ico" type="image/x-icon"> */ ?>
         <!-- Responsive -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,20 +69,14 @@ AppAsset::register($this);
                     <div class="topbar-left topbar-widgets text-left clearfix">
                         <div class="widget induscity-office-location-widget">
                             <div class="office-location clearfix">
-                                <div class="office-switcher">
-                                    <i class="flaticon-globe "></i>
-                                    <a class="current-office" href="#">California</a>
-                                    <ul>
-                                        <li class="location active" data-tab="cargohub-office-1">California</li>
-                                        <li class="location" data-tab="cargohub-office-2">New York</li>
-                                        <li class="location" data-tab="cargohub-office-3">Houston</li>
-                                    </ul>
-                                </div>
 
                                 <ul id="cargohub-office-1" class="office-1 topbar-office active">
                                     <li class="time"><i class="flaticon-arrow"></i>20 C, Factory St, California 10025</li>
                                     <li class="phone"><i class="flaticon-tool"></i>Call Us: +(321) 45 678 901</li>
-                                    <li class="email"><i class="flaticon-letter"></i>Mailus@ManuFactory.com</li>
+                                    <li class="email">
+                                        <a href="mailto:info@intelmec.com.do">
+                                        <i class="flaticon-letter"></i>info@intelmec.com.do</a>
+                                    </li>
                                 </ul>
 
                                 <ul id="cargohub-office-2" class="office-2 topbar-office">
@@ -100,27 +94,11 @@ AppAsset::register($this);
                     </div>
 
                     <div class="topbar-right topbar-widgets text-right clearfix">
-                        <div class="widget induscity-languages-widget">
-                            <div class="language list-dropdown">
-                                <span class="current"><img src="<?= Yii::$app->getHomeUrl(); ?>images/icon/en.png" alt="English">English<i class="fa fa-angle-down"></i></span>
-                                <ul>
-                                    <li class="en">
-                                        <a href="#"><img src="<?= Yii::$app->getHomeUrl(); ?>images/icon/en.png" alt="English">English</a>
-                                    </li>
-                                    <li class="de">
-                                        <a href="#"><img src="<?= Yii::$app->getHomeUrl(); ?>images/icon/de.png" alt="Germany">Germany</a>
-                                    </li>
-                                    <li class="fr">
-                                        <a href="#"><img src="<?= Yii::$app->getHomeUrl(); ?>images/icon/fr.png" alt="French">French</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
                         <div class="widget induscity-social-links-widget">
-                            <a href="#" class="share-facebook tooltip-enable social"  title="Facebook"  target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="share-twitter tooltip-enable social"  title="Twitter"  target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="share-skype tooltip-enable social"  title="Skype"  target="_blank"><i class="fa fa-skype"></i></a>
-                            <a href="#" class="share-linkedin tooltip-enable social"  title="Linkedin"  target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="share-facebook tooltip-enable social"  title="Facebook"  target="_blank"><i class="fa fa fa-facebook"></i></a>
+                            <a href="#" class="share-instagram tooltip-enable social"  title="Instagram"  target="_blank"><i class="fa fa-instagram"></i></a>
+
                         </div>					
                     </div>
 
@@ -145,90 +123,17 @@ AppAsset::register($this);
                             <div class="site-menu hidden-md hidden-sm hidden-xs">
                                 <nav id="site-navigation" class="main-nav primary-nav nav">
                                     <ul class="menu">
-                                        <li class="active has-children"><a href="index.html" class="dropdown-toggle">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home 1</a></li>
-                                                <li><a href="home-page-2.html">Home 2</a></li>
-                                                <li><a href="home-page-3.html">Home 3</a></li>
-                                                <li><a href="home-page-4.html">Home 4</a></li>
-                                                <li class="last-child"><a href="home-page-5.html">Home 5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children"><a href="" class="dropdown-toggle">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Company</a></li>
-                                                <li><a href="pricing-table.html">Pricing Table</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="faqs.html">FAQ’s</a></li>
-                                                <li class="last-child"><a href="404.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children" ><a href="" class="dropdown-toggle">Market Sectors</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="market-sectors.html">All Market Sector</a></li>
-                                                <li><a href="aero-space-services.html">Aero Space Services</a></li>
-                                                <li><a href="automative-system.html">Automative System</a></li>
-                                                <li><a href="construction-engineering.html">Construction & Engineering</a></li>
-                                                <li><a href="power-and-energy.html">Power and Energy</a></li>
-                                                <li><a href="railway-infrastructure.html">Railway Infrastructure</a></li>
-                                                <li class="last-child"><a href="ship-building-industry.html">Ship Building Industry</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children" ><a href="projects.html" class="dropdown-toggle">Projects</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#" class="dropdown-toggle">Projects With Space</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="projects-space-2.html">2 Columns</a></li>
-                                                        <li><a href="projects.html">3 Columns</a></li>
-                                                        <li class="last-child"><a href="projects-space-4.html">4 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="dropdown-toggle">Projects Without Space</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="projects-nospace-2.html">2 Columns</a></li>
-                                                        <li><a href="projects-nospace-3.html">3 Columns</a></li>
-                                                        <li class="last-child"><a href="projects-nospace-4.html">4 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="dropdown-toggle">Projects Modern</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="projects-modern-2.html">2 Columns</a></li>
-                                                        <li><a href="projects-modern-3.html">3 Columns</a></li>
-                                                        <li class="last-child"><a href="projects-modern-4.html">4 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="last-child"><a href="single-projects.html">Single Project</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children" ><a href="" class="dropdown-toggle">News</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blogs.html">News Default</a></li>
-                                                <li><a href="blogs-sidebar.html">News With Sidebar</a></li>
-                                                <li class="last-child"><a href="blog-single.html">News Single Post</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children" ><a href="" class="dropdown-toggle">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop Page</a></li>
-                                                <li><a href="cart.html">Shopping Cart</a></li>
-                                                <li><a href="single-product.html">Single Product</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li class="last-child"><a href="my-account.html">My account</a></li>
-                                            </ul>
-                                        </li>
-                                        <li ><a href="contact.html">Contact</a></li>
-                                        <li class="extra-menu-item menu-item-search last-child">
-                                            <a href="#" class="toggle-search"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                            <form class="search-form">
-                                                <input class="search-field" placeholder="Search..." value="" name="s" type="search">
-                                                <input class="search-submit" value="Search" type="submit">
-                                            </form>
-                                        </li>
+                                        <li class="active"><a href="<?= Yii::$app->getHomeUrl(); ?>">Inicio</a></li>
+                                        <li><a href="<?= Yii::$app->getHomeUrl(); ?>servicios">Servicios</a>
+                                        <li><a href="<?= Yii::$app->getHomeUrl(); ?>nosotros">Sobre Nosotros</a>
+
+
+                                        <li ><a href="<?= Yii::$app->getHomeUrl(); ?>contacto">Contacto</a></li>
+
                                         <li id="mf-active-menu" class="mf-active-menu"></li>
                                     </ul>
                                 </nav>
-                                <div class="mf-header-item-button"><a href="#" class="mf-btn">Get a Quote</a></div>
+
                             </div>
                             <div class="navbar-toggle col-md-3 col-sm-3 col-xs-3">
                                 <span id="mf-navbar-toggle" class="navbar-icon"><span class="navbars-line"></span></span>
@@ -340,7 +245,7 @@ AppAsset::register($this);
                 </div>
             </footer>
         </div>
-  <!-- jquery Liabrary -->
+        <!-- jquery Liabrary -->
         <script src="<?= Yii::$app->getHomeUrl(); ?>js/jquery-1.12.4.min.js"></script>
         <!-- bootstrap v3.3.6 js -->
         <script src="<?= Yii::$app->getHomeUrl(); ?>js/bootstrap.min.js"></script>
@@ -359,9 +264,9 @@ AppAsset::register($this);
         <script src="<?= Yii::$app->getHomeUrl(); ?>js/switcher.js"></script>
 
         <!-- google map -->
-        
-        
-        
+
+
+
 
         <!-- REVOLUTION JS FILES -->
         <script type="text/javascript" src="<?= Yii::$app->getHomeUrl(); ?>js/revolution/jquery.themepunch.tools.min.js"></script>
