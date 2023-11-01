@@ -84,7 +84,10 @@ class SiteController extends Controller {
     }
 
     public function actionContacto() {
-        return $this->render('contacto');
+        $model = new ContactForm();
+        return $this->render('contacto',[
+            'model'=>$model
+        ]);
     }
 
     /**

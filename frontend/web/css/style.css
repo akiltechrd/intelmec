@@ -9872,7 +9872,7 @@
 	    text-transform: uppercase;
 	    font-weight: 700;
 	    margin: 0;
-	    padding-bottom: 95px;
+	    padding-bottom: 40px;
 	    line-height: 1.2;
 	    position: relative;
 	    z-index: 9;
@@ -9880,7 +9880,7 @@
 	}
 	
 	.page-header .page-header-content {
-	    padding-top: 140px;
+	    padding-top: 64px;
 	    padding-bottom: 10px;
 	    position: relative;
 	}

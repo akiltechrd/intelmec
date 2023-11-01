@@ -53,7 +53,7 @@ AppAsset::register($this);
         <!--[if lt IE 9]><script src="<?= Yii::$app->getHomeUrl(); ?>js/respond.js"></script><![endif]-->
 
         <?php $this->registerCsrfMetaTags() ?>
-        <title><?= Html::encode(!empty($this->title)?$this->title:'Intelmec SRL') ?></title>
+        <title><?= Html::encode(!empty($this->title)?$this->title.' - ':'') ?>Intelmec SRL</title>
         <?php $this->head() ?>
     </head>
     <body class="home   header-sticky  header-v4 hide-topbar-mobile">
