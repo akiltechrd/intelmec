@@ -91,12 +91,12 @@ $this->title = 'Contacto';
         </div>
 
         <div class="contact-form mf-contact-form-7 form-light">
-<?php
-$form = ActiveForm::begin(['id' => 'contact-form', 'options' => [
-                'class' => 'wpcf7-form',
-                'novalidate' => "novalidate"
-        ]]);
-?>
+            <?php
+            $form = ActiveForm::begin(['id' => 'contact-form', 'options' => [
+                            'class' => 'wpcf7-form',
+                            'novalidate' => "novalidate"
+            ]]);
+            ?>
             <?php //<form method="post" action="ajax/mail.php" class="wpcf7-form" id="contact-form" novalidate="novalidate"> ?>
             <div class="mf-form mf-form-2">
                 <div class="row">
@@ -118,8 +118,10 @@ $form = ActiveForm::begin(['id' => 'contact-form', 'options' => [
                     </div>
                 </div>
                 <?=
-                $form->field($model, 'verifyCode')->widget(Captcha::class, [
-                    'template' => '<div class="row"><div class="col-lg-6 text-right">{image}</div><div class="col-lg-6">{input}</div></div>',
+                $form->field($model, 'verifyCode',[
+                    'template'=>'<div class="row"><div class="col-sm-3 text-right">{label}</div><div class="col-sm-9 text-left">{input}{error}{hint}</div></div>'
+                    ])->widget(Captcha::class, [
+                    'template' => '<div class="row"><div class="col-lg-3 text-right">{image}</div><div class="col-lg-6">{input}</div></div>',
                 ])
                 ?>
                 <div class="row">
@@ -129,7 +131,7 @@ $form = ActiveForm::begin(['id' => 'contact-form', 'options' => [
                 </div>
             </div>
             <div id="loading" class="wpcf7-response-output wpcf7-display-none"><img src="images/ajax-loader.png" alt="loading" /></div>
-<?php ActiveForm::end(); ?>
+            <?php ActiveForm::end(); ?>
         </div>
     </div>
 </div>
