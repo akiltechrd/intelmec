@@ -53,7 +53,7 @@ AppAsset::register($this);
         <!--[if lt IE 9]><script src="<?= Yii::$app->getHomeUrl(); ?>js/respond.js"></script><![endif]-->
 
         <?php $this->registerCsrfMetaTags() ?>
-        <title><?= Html::encode(!empty($this->title)?$this->title.' - ':'') ?>Intelmec SRL</title>
+        <title><?= Html::encode(!empty($this->title) ? $this->title . ' - ' : '') ?>Intelmec SRL</title>
         <?php $this->head() ?>
     </head>
     <body class="home   header-sticky  header-v4 hide-topbar-mobile">
@@ -71,23 +71,17 @@ AppAsset::register($this);
                             <div class="office-location clearfix">
 
                                 <ul id="cargohub-office-1" class="office-1 topbar-office active">
-                                    <li class="time"><i class="flaticon-arrow"></i>20 C, Factory St, California 10025</li>
-                                    <li class="phone"><i class="flaticon-tool"></i>Call Us: +(321) 45 678 901</li>
+                                    <li class="time"><i class="flaticon-arrow"></i>Carretera Angelina-Fantino, Curva de Bacumi, Cotui, RD</li>
+                                    <li class="phone"><i class="flaticon-tool"></i>Llámanos:  
+                                        <a href="tel:8298136607 ">829-813-6607</a>
+
+                                    </li>
                                     <li class="email">
                                         <a href="mailto:info@intelmec.com.do">
-                                        <i class="flaticon-letter"></i>info@intelmec.com.do</a>
+                                            <i class="flaticon-letter"></i>info@intelmec.com.do</a>
                                     </li>
                                 </ul>
 
-                                <ul id="cargohub-office-2" class="office-2 topbar-office">
-                                    <li class="time"><i class="flaticon-arrow"></i>10 B, Factory St, New york 11024</li>
-                                    <li class="phone"><i class="flaticon-tool"></i>Call Us: +(321) 45 678 333</li>
-                                </ul>
-
-                                <ul id="cargohub-office-3" class="office-3 topbar-office">
-                                    <li class="time"><i class="flaticon-arrow"></i>05 A, Factory St, Houston 12022</li>
-                                    <li class="phone"><i class="flaticon-tool"></i>Call Us: +(321) 45 678 456</li>
-                                </ul>
 
                             </div>
                         </div>
@@ -96,8 +90,8 @@ AppAsset::register($this);
                     <div class="topbar-right topbar-widgets text-right clearfix">
 
                         <div class="widget induscity-social-links-widget">
-                            <a href="#" class="share-facebook tooltip-enable social"  title="Facebook"  target="_blank"><i class="fa fa fa-facebook"></i></a>
-                            <a href="#" class="share-instagram tooltip-enable social"  title="Instagram"  target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://web.facebook.com/intelmecsrl" class="share-facebook tooltip-enable social"  title="Facebook"  target="_blank"><i class="fa fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/intelmec8/" class="share-instagram tooltip-enable social"  title="Instagram"  target="_blank"><i class="fa fa-instagram"></i></a>
 
                         </div>					
                     </div>
@@ -114,16 +108,16 @@ AppAsset::register($this);
                     <div class="container">
                         <div class="row menu-row">
                             <div class="site-logo col-md-9 col-sm-9 col-xs-9">
-                                <a href="#" class="logo">
+                                <a href="<?= Yii::$app->getHomeUrl(); ?>" class="logo">
                                     <img src="<?= Yii::$app->getHomeUrl(); ?>images/logo.png" alt="Induscity" class="logo">
                                 </a>
-                                <p class="site-title"><a href="#" rel="home">Induscity</a></p>
-                                <h2 class="site-description">Just another Steel Themes Sites site</h2>
+                                <p class="site-title"><a href="<?= Yii::$app->getHomeUrl(); ?>" rel="home">Intelmec</a></p>
+                                
                             </div>
                             <div class="site-menu hidden-md hidden-sm hidden-xs">
                                 <nav id="site-navigation" class="main-nav primary-nav nav">
                                     <ul class="menu">
-                                        <li class="active"><a href="<?= Yii::$app->getHomeUrl(); ?>">Inicio</a></li>
+                                        <li><a href="<?= Yii::$app->getHomeUrl(); ?>">Inicio</a></li>
                                         <li><a href="<?= Yii::$app->getHomeUrl(); ?>servicios">Servicios</a>
                                         <li><a href="<?= Yii::$app->getHomeUrl(); ?>nosotros">Sobre Nosotros</a>
 
@@ -144,23 +138,40 @@ AppAsset::register($this);
             </header>
             <!-- masthead end -->
             <?= $content ?>
-            	
+
 
             <!-- copyright -->	
             <footer  class="site-footer">
                 <div class="container footer-info">
                     <div class="footer-copyright">
-                        Copyrights © 2018 All Rights Reserved by <a href="#">Induscity</a>. </div>
+                        Intelmec &reg; <?= date('Y') ?> desarrolado por <a href="https://akiltech.com">Akiltech</a>. </div>
                     <div class="text-right">
                         <div class="socials footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-skype"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://web.facebook.com/intelmecsrl" target="_blank"><i class="fa fa-facebook"></i></a>
+
+                            <a href="https://www.instagram.com/intelmec8/" target="_blank"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </footer>
+        </div>
+        <!--primary-mobile-nav-->
+        <div class="primary-mobile-nav header-v1" id="primary-mobile-nav" role="navigation">
+            <a href="#" class="close-canvas-mobile-panel">×</a>
+            <ul class="menu">
+
+                <li><a href="<?= Yii::$app->getHomeUrl(); ?>">Inicio</a></li>
+                <li><a href="<?= Yii::$app->getHomeUrl(); ?>servicios">Servicios</a>
+                <li><a href="<?= Yii::$app->getHomeUrl(); ?>nosotros">Sobre Nosotros</a>
+
+
+                <li ><a href="<?= Yii::$app->getHomeUrl(); ?>contacto">Contacto</a></li>
+
+                 
+
+
+            </ul>
+
         </div>
         <!-- jquery Liabrary -->
         <script src="<?= Yii::$app->getHomeUrl(); ?>js/jquery-1.12.4.min.js"></script>

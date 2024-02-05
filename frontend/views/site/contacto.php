@@ -8,19 +8,10 @@ use yii\bootstrap5\ActiveForm;
 use yii\captcha\Captcha;
 
 $this->title = 'Contacto';
+
 ?>
-<!--page-header-->
-<div class="page-header has-image">
-    <div class="page-header-content">
-        <div class="featured-image"></div>
-        <div class="container">
-            <h1>Contacto</h1>
 
-        </div>
-    </div>
-</div>
-<!--page-header  end-->
-
+<?=$this->render('/site/_header',['header'=>'Contacto'])?>
 <!-- team-->
 <div class="contactpage pagepadd">
     <div class="container">
@@ -30,13 +21,13 @@ $this->title = 'Contacto';
 
                     <div class="contact-info address"><i class="flaticon-arrow"></i>
                         <div>
-                            <span>Direccion:</span> 
+                            <span>Direcci&oacute;n:</span> 
                             Carretera Angelina-Fantino, Curva de Bacumi, Cotui, Rep. Dom.
                         </div>
                     </div>
                     <div class="contact-info "><i class="fa fa-phone"></i>
                         <div>
-                            <span>Telefono:</span> 
+                            <span>Tel&eacute;fono:</span> 
 
 
                             <a class="text-info" href="tel:829-813-6607">  
@@ -84,10 +75,12 @@ $this->title = 'Contacto';
         </div>
     </div>
 </div>
+
+<?php /*
 <div class="contactform">
     <div class="container">
         <div class="mf-section-title text-center dark large-size margbtm20">
-            <h2>Envianos un mensaje</h2>
+            <h2>Envíanos un mensaje</h2>
         </div>
 
         <div class="contact-form mf-contact-form-7 form-light">
@@ -135,3 +128,4 @@ $this->title = 'Contacto';
         </div>
     </div>
 </div>
+*/ ?>
