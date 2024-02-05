@@ -42,9 +42,7 @@ AppAsset::register($this);
         <link rel="stylesheet" type="text/css" href="<?= Yii::$app->getHomeUrl(); ?>css/revolution/navigation.css">
 
         <!--Favicon-->
-        <?php /*
-          <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-          <link rel="icon" href="images/favicon.ico" type="image/x-icon"> */ ?>
+        <link rel="icon" type="image/png" href="<?= Yii::$app->getHomeUrl(); ?>images/favicon.png">
         <!-- Responsive -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,7 +110,7 @@ AppAsset::register($this);
                                     <img src="<?= Yii::$app->getHomeUrl(); ?>images/logo.png" alt="Induscity" class="logo">
                                 </a>
                                 <p class="site-title"><a href="<?= Yii::$app->getHomeUrl(); ?>" rel="home">Intelmec</a></p>
-                                
+
                             </div>
                             <div class="site-menu hidden-md hidden-sm hidden-xs">
                                 <nav id="site-navigation" class="main-nav primary-nav nav">
@@ -167,7 +165,7 @@ AppAsset::register($this);
 
                 <li ><a href="<?= Yii::$app->getHomeUrl(); ?>contacto">Contacto</a></li>
 
-                 
+
 
 
             </ul>
