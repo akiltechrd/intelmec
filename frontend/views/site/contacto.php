@@ -61,7 +61,7 @@ $this->title = 'Contacto';
             <div class="col-lg-8 col-md-12">
                 <div class="mf-department">
                     <div class="mf-section-title text-left dark medium-size">
-                        <h2>Ubicacion</h2>
+                        <h2>Ubicación</h2>
                     </div>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.191949269061!2d-70.2528174!3d19.143073299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eafd21ad4ca7341%3A0xbc2e826ab3c25bc5!2sIntelmec!5e0!3m2!1sen!2sdo!4v1698868872084!5m2!1sen!2sdo" 
